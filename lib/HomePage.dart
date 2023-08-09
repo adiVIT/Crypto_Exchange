@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:bitcoins/coin_data.dart'; // Import the CoinDataPage
+import 'package:bitcoins/coin_data.dart';
 import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {
@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(height: 16),
           Container(
             width: double.infinity,
-            color: Colors.blue, // Placeholder color for Ethereum (ETH)
+            color: Colors.blue,
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -115,7 +115,6 @@ class _HomePageState extends State<HomePage> {
                   '1 BTC = ${bitcoinRate.toStringAsFixed(2)} $currency',
                   style: const TextStyle(color: Colors.white),
                 ),
-                // Add more data or widgets specific to Ethereum (ETH) here
               ],
             ),
           ),
@@ -139,14 +138,13 @@ class _HomePageState extends State<HomePage> {
                   '1 LTC = ${litecoinRate.toStringAsFixed(2)} $currency',
                   style: const TextStyle(color: Colors.white),
                 ),
-                // Add more data or widgets specific to Litecoin (LTC) here
               ],
             ),
           ),
 
           Container(
             width: double.infinity,
-            color: Colors.green, // Placeholder color for Ethereum (ETH)
+            color: Colors.green,
             padding: const EdgeInsets.all(16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -164,7 +162,6 @@ class _HomePageState extends State<HomePage> {
                   '1 ETH = ${ethereumRate.toStringAsFixed(2)} $currency',
                   style: const TextStyle(color: Colors.white),
                 ),
-                // Add more data or widgets specific to Ethereum (ETH) here
               ],
             ),
           ),
